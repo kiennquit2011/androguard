@@ -38,7 +38,8 @@ from androguard.util import *
 from androguard.misc import *
 
 from IPython.terminal.embed import InteractiveShellEmbed
-from IPython.config.loader import Config
+#from IPython.config.loader import Config
+from traitlets.config import Config
 
 
 option_0 = { 'name' : ('-i', '--input'), 'help' : 'file : use this filename', 'nargs' : 1 }

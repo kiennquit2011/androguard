@@ -12,8 +12,9 @@ OUTPUT = "./output/"
 #TEST  = 'examples/java/Demo1/orig/DES.class'
 #TEST  = 'examples/java/Demo1/orig/Util.class'
 #TEST = "apks/DroidDream/tmp/classes.dex"
-#TEST = "./examples/android/TCDiff/bin/classes.dex"
-TEST = "apks/iCalendar.apk"
+#TEST = "../examples/android/TCDiff/bin/classes.dex"
+#TEST = "../../apk/iCalendar_malware.apk"
+TEST = "../../apk/FakeLocation_2.94.apk"
 #TEST = "apks/adrd/5/8370959.dex"
 
 def display_CFG(a, x, classes):
@@ -84,16 +85,16 @@ print a.get_vm().get_regex_strings( ".*(t\_t).*" )
 classes = a.get_vm().get_classes_names()
 vm = a.get_vm()
 
-display_CFG( a, x, classes )
-display_STRINGS( vm, x, classes )
-display_FIELDS( vm, x, classes )
-display_PACKAGES( vm, x, classes )
-display_PACKAGES_IE( vm, x, classes )
-display_PACKAGES_II( vm, x, classes )
+# display_CFG( a, x, classes )
+# display_STRINGS( vm, x, classes )
+# display_FIELDS( vm, x, classes )
+# display_PACKAGES( vm, x, classes )
+# display_PACKAGES_IE( vm, x, classes )
+# display_PACKAGES_II( vm, x, classes )
 display_PERMISSION( vm, x, classes )
-
-display_SEARCH_PACKAGES( a, x, classes, "Landroid/telephony/" )
-display_SEARCH_PACKAGES( a, x, classes, "Ljavax/crypto/" )
-display_SEARCH_METHODS( a, x, classes, "Ljavax/crypto/", "generateSecret", "." )
-
-display_OBJECT_CREATED( a, x, "." )
+#
+# display_SEARCH_PACKAGES( a, x, classes, "Landroid/telephony/" )
+# display_SEARCH_PACKAGES( a, x, classes, "Ljavax/crypto/" )
+# display_SEARCH_METHODS( a, x, classes, "Ljavax/crypto/", "generateSecret", "." )
+#
+# display_OBJECT_CREATED( a, x, "." )

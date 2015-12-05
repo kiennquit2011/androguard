@@ -27,12 +27,12 @@ from androguard.core.androgen import AndroguardS
 from androguard.core.analysis import analysis
 
 
-TESTS_CASES  = [ #'examples/android/TC/bin/classes.dex',
-                 'examples/android/TestsAndroguard/bin/classes.dex',
+TESTS_CASES  = [
+                    '../examples/android/TC/bin/classes.dex',
                ]
 
 VALUES = {
-            'examples/android/TestsAndroguard/bin/classes.dex' : {
+            '../examples/android/TC/bin/classes.dex' : {
                   "Ltests/androguard/TestInvoke; <init> ()V" : {
                      0x0 : ("invoke-direct" , [['v',1] , ['meth@', 4, 'Ljava/lang/Object;', '()', 'V', '<init>']]),
                      0xa : ("invoke-virtual", [['v',1], ['v',0] , ['meth@', 49, 'Ltests/androguard/TestInvoke;', '(I)', 'I', 'TestInvoke1']]),

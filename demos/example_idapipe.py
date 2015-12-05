@@ -26,9 +26,9 @@ sys.path.append(PATH_INSTALL)
 from androguard.core.binaries import idapipe
 
 PATH_IDA = os.path.expanduser("~") + "/ida-6.2/idal"
-PATH_WRAPPER = "./androguard/core/binaries/idawrapper.py"
+PATH_WRAPPER = "../../androguard/core/binaries/idawrapper.py"
 
-ip = idapipe.IDAPipe( PATH_IDA, PATH_WRAPPER, "./elsim/examples/x86/elf/polarssl/libpolarssl.so" )
+ip = idapipe.IDAPipe( PATH_IDA, PATH_WRAPPER, "../../elsim/examples/x86/elf/polarssl/libpolarssl.so" )
 #ip = idapipe.IDAPipe( "/media/truecrypt1/ida/6.2/ida-6.2/idal", "examples/x86/pe/win32k-5.1.2600.6119.sys" )
 
 try:
@@ -38,7 +38,7 @@ try:
 
     idapipe.display_function( f[ 15344 ] )
     #ip.get_raw()
-    #ip.get_functions()
+    #ip.get_functions()TEST = "../examples/android/TCDiff/bin/classes.dex"
     #ip.get_function_name( "aes_gen_tables" )
 
     ip.quit()

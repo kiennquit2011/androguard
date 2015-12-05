@@ -28,7 +28,7 @@ from androguard.core.androgen import AndroguardS
 from androguard.core.androgen import AndroguardS
 from androguard.core.analysis import analysis
 
-TEST_CASE  = "examples/android/TestsAndroguard/bin/classes.dex"
+TEST_CASE  = "../examples/android/TestsAndroguard/bin/classes.dex"
 
 def test(got, expected):
     if got == expected:

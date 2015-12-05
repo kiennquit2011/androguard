@@ -26,8 +26,8 @@ sys.path.append(PATH_INSTALL)
 from androguard.core.androgen import AndroguardS
 from androguard.core.analysis import analysis
 
-#TEST_CASE  = 'examples/android/TC/bin/classes.dex'
-TEST_CASE = 'examples/android/TestsAndroguard/bin/classes.dex'
+TEST_CASE  = '../examples/android/TC/bin/classes.dex'
+# TEST_CASE = '../examples/android/TestsAndroguard/bin/classes.dex'
 
 VALUES_ = { "Lorg/t0t0/androguard/TC/TestType1; <init> ()V" : [
                   42,

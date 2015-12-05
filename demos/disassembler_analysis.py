@@ -9,7 +9,7 @@ from androguard.core.bytecodes import dvm
 from androguard.core.analysis import analysis
 from androguard.util import read
 
-TEST = 'examples/android/TestsAndroguard/bin/classes.dex'
+TEST = '../examples/android/TestsAndroguard/bin/classes.dex'
 
 d = dvm.DalvikVMFormat(read(TEST, binary=False))
 x = analysis.VMAnalysis(d)
