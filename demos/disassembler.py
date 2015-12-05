@@ -8,7 +8,7 @@ sys.path.append(PATH_INSTALL)
 from androguard.core.androgen import AndroguardS
 from androguard.core.analysis import analysis
 
-TEST = 'examples/android/TestsAndroguard/bin/classes.dex'
+TEST = '../examples/android/TestsAndroguard/bin/classes.dex'
 
 a = AndroguardS(TEST)
 x = analysis.VMAnalysis(a.get_vm())

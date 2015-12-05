@@ -8,8 +8,8 @@ sys.path.append(PATH_INSTALL)
 from androguard.core.bytecodes import dvm
 from androguard.util import read
 
-TEST = "./examples/dalvik/test/bin/classes.dex"
-TEST_OUTPUT = "./examples/dalvik/test/bin/classes_output.dex"
+TEST = "../examples/dalvik/test/bin/classes.dex"
+TEST_OUTPUT = "../examples/dalvik/test/bin/classes_output.dex"
 
 j = dvm.DalvikVMFormat( read(TEST, binary=False) )
 
