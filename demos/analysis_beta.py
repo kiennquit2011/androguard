@@ -7,8 +7,8 @@ sys.path.append(PATH_INSTALL + "./")
 from androguard.core.androgen import AndroguardS
 from androguard.core.analysis import analysis
 
-# TEST = "../../apk/FakeLocation_2.94.apk"
-TEST = "../../apk/iCalendar_malware.apk"
+TEST = "../../../apk/FakeLocation_2.94.apk"
+# TEST = "../../apk/iCalendar_malware.apk"
 
 def display_CFG(a, x, classes):
     for method in a.get_methods():
@@ -31,5 +31,5 @@ x = analysis.uVMAnalysis( a.get_vm() )
 classes = a.get_vm().get_classes_names()
 vm = a.get_vm()
 
-# display_CFG( a, x, classes )
-display_PERMISSION( vm, x, classes )
+display_CFG( a, x, classes )
+# display_PERMISSION( vm, x, classes )
